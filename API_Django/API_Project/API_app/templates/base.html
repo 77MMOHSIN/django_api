@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thsi is first project</title> 
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center  alert alert-danger" >Function based view modelform crub</h1> 
+{% block content %}
+<div class='row'>
+    <div class='col-sm-4'>
+        <h3>add new student23</h3>
+       <form action=""method='POST'> {% csrf_token %}
+    {{form.as_p}}
+<input type="submit" name="" id="" value="Add">
+
+</form>
+
+    </div>
+</div>
+{% endblock content %}
+
+     <script src="{% static 'js/jquery.js'%}"></script>
+     <script src="{% static 'js/upper.js'%}"></script>
+     <script src="{% static 'js/bootstrap.main.js'%}"></script>
+</body>
+</html>
